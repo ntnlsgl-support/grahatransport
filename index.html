@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Graha Transport - Solusi rental mobil  dengan pelayanan profesional dan armada modern di Ungaran - Semarang dan sekitarnya.">
+
+  <title>GRAHA TRANSPORT | Rental Mobil Ungaran</title>
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body class="antialiased selection:bg-teal-400 selection:text-black">
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+  <!-- CLOSE BUTTON -->
+  <button id="closeMenu" aria-label="Close menu"
+    class="absolute top-6 right-6 w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl hover:bg-teal-400 hover:text-black transition">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <a href="#beranda" class="mobile-link">
+    <i class="fa-solid fa-house"></i> Beranda
+  </a>
+  <a href="#keunggulan" class="mobile-link">
+    <i class="fa-solid fa-shield-heart"></i> Keunggulan
+  </a>
+  <a href="#armada" class="mobile-link">
+    <i class="fa-solid fa-car-side"></i> Armada
+  </a>
+  <a href="#review" class="mobile-link">
+    <i class="fa-solid fa-star"></i> Review
+  </a>
+  <a href="#kontak" class="mobile-link">
+    <i class="fa-solid fa-phone"></i> Kontak
+  </a>
+</div>
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 glass">
+  <div class="max-w-7xl mx-auto px-5 md:px-6 py-4 flex items-center justify-between">
+    <!-- LOGO -->
+    <a href="#" class="flex items-center gap-3 group">
+  <div class="w-14 h-14 flex items-center justify-center group-hover:scale-105 transition duration-300">
+    <img src="logo.png" alt="Logo Graha Transport" class="w-full h-full object-contain">
+  </div>
+  
+  <div class="text-2xl md:text-3xl font-extrabold italic tracking-tight">
+    <span class="text-white">GRAHA</span><span class="text-teal-400">TRANSPORT</span>
+  </div>
+</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="hidden lg:flex items-center gap-8 font-medium text-sm">
+      <a href="#beranda" class="hover:text-teal-400 transition">Beranda</a>
+      <a href="#keunggulan" class="hover:text-teal-400 transition">Keunggulan</a>
+      <a href="#armada" class="hover:text-teal-400 transition">Armada</a>
+      <a href="#review" class="hover:text-teal-400 transition">Review</a>
+      <a href="#kontak" class="hover:text-teal-400 transition">Kontak</a>
+    </nav>
+
+    <!-- ACTIONS -->
+    <div class="flex items-center gap-4">
+      <a href="https://wa.me/6281327160516" target="_blank" rel="noopener noreferrer"
+         class="hidden lg:flex btn-primary px-6 py-3 rounded-xl font-semibold text-black gap-2 items-center">
+        <i class="fa-brands fa-whatsapp text-lg"></i> Hubungi Kami
+      </a>
+      <button id="menuBtn" aria-label="Open menu" class="lg:hidden text-2xl p-2 focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="beranda" class="hero-bg min-h-screen flex items-center pt-20">
+  <div class="max-w-7xl mx-auto px-5 md:px-6 py-12 grid lg:grid-cols-2 gap-14 items-center">
+    
+    <!-- TEXT CONTENT -->
+    <div data-aos="fade-right">
+      <div class="inline-flex items-center gap-2 border border-white/10 bg-white/5 rounded-full px-4 py-2 text-sm text-teal-300 mb-6 shadow-sm">
+        <i class="fa-solid fa-star text-yellow-400"></i>
+        Rental Mobil Premium Indonesia
+      </div>
+
+      <h1 class="hero-title text-5xl md:text-7xl font-extrabold leading-tight">
+        Mobilitas Modern <br/>
+        <span class="text-teal-400">Dengan Pelayanan Premium</span>
+      </h1>
+
+      <p class="text-slate-300 text-lg mt-7 leading-relaxed max-w-lg">
+        Graha Transport menghadirkan pengalaman rental mobil profesional, nyaman, aman, dan siap melayani perjalanan bisnis maupun wisata Anda.
+      </p>
+
+      <div class="flex flex-wrap gap-4 mt-10">
+        <a href="#armada" class="btn-primary px-8 py-4 rounded-xl font-semibold text-black flex items-center gap-2">
+          Lihat Armada <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://wa.me/6281327160516" target="_blank" rel="noopener noreferrer"
+           class="border border-white/20 bg-white/5 hover:bg-white/10 hover:border-teal-400 transition px-8 py-4 rounded-xl font-semibold backdrop-blur-sm">
+          Konsultasi Gratis
+        </a>
+      </div>
+    </div>
+
+    <!-- HERO SLIDER -->
+    <div data-aos="fade-left" data-aos-delay="200">
+      <div class="hero-slider shadow-2xl">
+        <div id="heroTrack" class="hero-track">
+          <img src="img/2.jpeg" alt="Premium Sport Car">
+          <img src="img/3.jpeg" alt="Luxury SUV">
+          <img src="img/4.jpeg" alt="Modern Sedan">
+          <img src="img/5.jpeg" alt="Executive Car">
+          <img src="img/6.jpeg" alt="Comfortable Travel">
+        </div>
+        <div class="overlay"></div>
+        <div class="dots">
+          <div class="dot active" aria-label="Slide 1"></div>
+          <div class="dot" aria-label="Slide 2"></div>
+          <div class="dot" aria-label="Slide 3"></div>
+          <div class="dot" aria-label="Slide 4"></div>
+          <div class="dot" aria-label="Slide 5"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- KEUNGGULAN SECTION -->
+<section id="keunggulan" class="py-24 bg-[#0F172A] relative">
+  <!-- Decorative background elements -->
+  <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-teal-500/50 to-transparent"></div>
+  
+  <div class="max-w-7xl mx-auto px-5 md:px-6 relative z-10">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Kenapa Memilih <span class="text-teal-400">Graha Transport?</span>
+      </h2>
+      <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+        Pelayanan eksklusif dengan armada premium dan profesionalisme terbaik untuk menjamin kepuasan perjalanan Anda.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 xl:grid-cols-5 gap-6">
+      
+      <div class="card-dark rounded-3xl p-8 text-center sm:text-left" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-16 h-16 rounded-2xl bg-teal-400/10 flex items-center justify-center sm:justify-start sm:bg-transparent mb-5 mx-auto sm:mx-0">
+          <i class="fa-solid fa-headset text-4xl text-teal-400"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">24 Jam Support</h3>
+        <p class="text-slate-400 text-sm">Customer support aktif kapanpun Anda membutuhkan bantuan.</p>
+      </div>
+
+      <div class="card-dark rounded-3xl p-8 text-center sm:text-left" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-16 h-16 rounded-2xl bg-orange-400/10 flex items-center justify-center sm:justify-start sm:bg-transparent mb-5 mx-auto sm:mx-0">
+          <i class="fa-solid fa-user-tie text-4xl text-orange-400"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Driver Expert</h3>
+        <p class="text-slate-400 text-sm">Driver profesional yang ramah dan menguasai rute jalan raya.</p>
+      </div>
+
+      <div class="card-dark rounded-3xl p-8 text-center sm:text-left" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-16 h-16 rounded-2xl bg-purple-400/10 flex items-center justify-center sm:justify-start sm:bg-transparent mb-5 mx-auto sm:mx-0">
+          <i class="fa-solid fa-car-side text-4xl text-purple-400"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Armada Premium</h3>
+        <p class="text-slate-400 text-sm">Mobil keluaran terbaru yang sangat terawat dan wangi.</p>
+      </div>
+
+      <div class="card-dark rounded-3xl p-8 text-center sm:text-left" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-16 h-16 rounded-2xl bg-cyan-400/10 flex items-center justify-center sm:justify-start sm:bg-transparent mb-5 mx-auto sm:mx-0">
+          <i class="fa-solid fa-map-location-dot text-4xl text-cyan-400"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Area Luas</h3>
+        <p class="text-slate-400 text-sm">Siap melayani perjalanan di dalam maupun luar kota besar.</p>
+      </div>
+
+      <div class="card-dark rounded-3xl p-8 text-center sm:text-left" data-aos="fade-up" data-aos-delay="500">
+        <div class="w-16 h-16 rounded-2xl bg-pink-400/10 flex items-center justify-center sm:justify-start sm:bg-transparent mb-5 mx-auto sm:mx-0">
+          <i class="fa-solid fa-city text-4xl text-pink-400"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Corporate Ready</h3>
+        <p class="text-slate-400 text-sm">Mendukung penyewaan operasional untuk perusahaan.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ARMADA SECTION -->
+<section id="armada" class="py-24 relative">
+  <div class="max-w-[1700px] mx-auto px-5 md:px-8">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Armada <span class="text-teal-400">Terbaik Kami</span>
+      </h2>
+      <p class="text-slate-400 mt-4 text-lg">
+        Pilihan kendaraan modern untuk memastikan perjalanan yang nyaman dan elegan.
+      </p>
+    </div>
+
+    <!-- SEGMENT 1: PERJALANAN DINAS TERJAMIN -->
+    <div class="mb-10">
+      <div class="mb-8 border-b border-white/10 pb-4" data-aos="fade-right">
+        <h3 class="text-2xl font-bold text-white border-l-4 border-teal-400 pl-4">PERJALANAN DINAS TERJAMIN</h3>
+        <p class="text-slate-400 mt-2 pl-5 text-sm md:text-base">Rasa Kuat dan Terpercaya untuk perjalanan dan kegiatan anda.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Car 1 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-teal-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(45,212,191,0.20)]" data-aos="zoom-in-up">
+          <div class="relative overflow-hidden">
+            <img src="car/alphard.png" alt="Alphard Facelift" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-teal-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">PREMIUM</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">Alphard Facelift</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 2.500K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">6 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Bensin</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20Alphard%20Facelift" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-teal-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(45,212,191,0.20)]" data-aos="zoom-in-up" data-aos-delay="100">
+          <div class="relative overflow-hidden">
+            <img src="car/fortuner.png" alt="Fortuner VRZ" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-teal-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">SUV</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">Fortuner VRZ</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 1.300K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">7 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Diesel</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20Fortuner%20VRZ" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-teal-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(45,212,191,0.20)]" data-aos="zoom-in-up" data-aos-delay="200">
+          <div class="relative overflow-hidden">
+            <img src="car/pajero.png" alt="New Pajero" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-teal-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">SUV</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">New Pajero</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 1.300K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">7 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Diesel</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20New%20Pajero" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 4 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-teal-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(45,212,191,0.20)]" data-aos="zoom-in-up">
+          <div class="relative overflow-hidden">
+            <img src="car/zenix.png" alt="Zenix Hybrid" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-teal-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">HYBRID</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">Zenix Hybrid</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 900K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">7 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Bensin</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20Zenix%20Hybrid" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 5 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-teal-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(45,212,191,0.20)]" data-aos="zoom-in-up" data-aos-delay="100">
+          <div class="relative overflow-hidden">
+            <img src="car/innova.png" alt="Innova Reborn Facelift" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-teal-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">FAVORIT</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">Innova Reborn Facelift</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 650K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">7 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Diesel</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20Innova%20Reborn%20Facelift" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 6 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-teal-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(45,212,191,0.20)]" data-aos="zoom-in-up" data-aos-delay="200">
+          <div class="relative overflow-hidden">
+            <img src="car/xpander.png" alt="Xpander" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-teal-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">MPV</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">Xpander</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 550K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">7 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Bensin</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20Xpander" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEGMENT 2: FAVORIT TEMAN MAIN -->
+    <div class="mb-10 mt-20">
+      <div class="mb-8 border-b border-white/10 pb-4" data-aos="fade-right">
+        <h3 class="text-2xl font-bold text-white border-l-4 border-orange-400 pl-4">TEMAN MAIN FAVORIT</h3>
+        <p class="text-slate-400 mt-2 pl-5 text-sm md:text-base">Armada setia anter kamu kemana aja. Anti panas anti lemas!</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Car 7 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-orange-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(249,115,22,0.20)]" data-aos="zoom-in-up">
+          <div class="relative overflow-hidden">
+            <img src="car/brio.png" alt="All New Brio" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-orange-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">CITY CAR</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">All New Brio</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 450K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">5 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Bensin</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20All%20New%20Brio" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 8 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-orange-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(249,115,22,0.20)]" data-aos="zoom-in-up" data-aos-delay="100">
+          <div class="relative overflow-hidden">
+            <img src="car/raize.png" alt="Raize" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-orange-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">COMPACT SUV</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">Raize</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 500K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">5 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Bensin</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20Raize" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 9 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-orange-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(249,115,22,0.20)]" data-aos="zoom-in-up" data-aos-delay="200">
+          <div class="relative overflow-hidden">
+            <img src="car/agya.png" alt="Agya" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-orange-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">CITY CAR</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">Agya</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 450K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">5 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Bensin</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20Agya" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEGMENT 3: PILIHAN TERBAIK KELUARGA -->
+    <div class="mb-10 mt-20">
+      <div class="mb-8 border-b border-white/10 pb-4" data-aos="fade-right">
+        <h3 class="text-2xl font-bold text-white border-l-4 border-purple-400 pl-4">PILIHAN TERBAIK KELUARGA</h3>
+        <p class="text-slate-400 mt-2 pl-5 text-sm md:text-base">Siap tampung keluarga, masih sisa angkut tetangga!</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Car 10 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-purple-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(168,85,247,0.20)]" data-aos="zoom-in-up">
+          <div class="relative overflow-hidden">
+            <img src="car/avanza.png" alt="All New Avanza FWD" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-purple-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">MPV</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">All New Avanza FWD</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 450K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">7 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Bensin</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20All%20New%20Avanza%20FWD" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 11 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-purple-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(168,85,247,0.20)]" data-aos="zoom-in-up" data-aos-delay="100">
+          <div class="relative overflow-hidden">
+            <img src="car/ertiga.png" alt="All New Ertiga" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-purple-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">MPV</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">All New Ertiga</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 450K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">7 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Bensin</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20All%20New%20Ertiga" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+        <!-- Car 12 -->
+        <div class="group relative overflow-hidden rounded-[30px] bg-[#1b2740] border border-white/10 hover:border-purple-400 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(168,85,247,0.20)]" data-aos="zoom-in-up" data-aos-delay="200">
+          <div class="relative overflow-hidden">
+            <img src="car/hiace.png" alt="Hiace Premio" class="w-full h-[220px] object-cover group-hover:scale-110 transition duration-700">
+            <div class="absolute top-4 right-4 bg-purple-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">MINIBUS</div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-2xl font-extrabold leading-tight mb-2">Hiace Premio</h4>
+            <div class="text-xl font-bold text-teal-400 mb-5">IDR 1.100K <span class="text-xs text-slate-400 font-normal">/hari</span></div>
+            <div class="border-y border-white/10 py-4 mb-5">
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div><i class="fa-solid fa-users text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">14 Kursi</p></div>
+                <div><i class="fa-solid fa-gas-pump text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Diesel</p></div>
+                <div><i class="fa-solid fa-gear text-teal-400 text-lg mb-1"></i><p class="text-slate-300 text-xs">Otomatis / Manual</p></div>
+              </div>
+            </div>
+            <a href="https://wa.me/6281327160516?text=Halo%20Graha%20Transport,%20saya%20tertarik%20sewa%20Hiace%20Premio" target="_blank" class="w-full h-12 rounded-xl bg-gradient-to-r from-[#11b6aa] to-[#39d9c8] hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-shadow flex items-center justify-center gap-2 text-black font-bold text-lg"><i class="fa-brands fa-whatsapp text-xl"></i> Pilih Mobil</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEW & MAP SECTION -->
+<section id="review" class="py-24 bg-[#0F172A] border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-5 md:px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Lokasi & <span class="text-teal-400">Review Pelanggan</span>
+      </h2>
+    </div>
+
+    <div class="grid xl:grid-cols-2 gap-10 items-start">
+      <!-- MAP -->
+      <div class="map-wrapper shadow-2xl" data-aos="fade-right">
+        <div class="overflow-hidden rounded-3xl border border-white/10 relative h-[520px]">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4031.2647432648455!2d110.39620667508028!3d-7.115132292888454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e0668b3b6c02d3%3A0x6bce558a24a94e79!2sGRAHA%20TRANSPORT!5e1!3m2!1sen!2sid!4v1779474357412!5m2!1sen!2sid" 
+            class="absolute inset-0 w-full h-full"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            title="Lokasi Graha Transport"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="grid md:grid-cols-2 gap-2" data-aos="fade-left">
+        <div class="review-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-xl mb-2 text-white">Andi Prasetyo</h4>
+            <div class="text-yellow-400 mb-4 text-sm tracking-widest"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="text-slate-400 italic">"Pelayanan sangat ramah dan mobil sangat bersih. Wangi saat pertama kali masuk. Sangat direkomendasikan!"</p>
+          </div>
+          <div class="mt-4 text-xs text-slate-500 text-right">Direview di Google</div>
+        </div>
+
+        <div class="review-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-xl mb-2 text-white">Rina Maharani</h4>
+            <div class="text-yellow-400 mb-4 text-sm tracking-widest"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="text-slate-400 italic">"Driver profesional dan paham jalan, perjalanan bisnis jadi terasa sangat nyaman dan efisien waktu."</p>
+          </div>
+          <div class="mt-4 text-xs text-slate-500 text-right">Direview di Google</div>
+        </div>
+
+        <div class="review-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-xl mb-2 text-white">Bagas Putra</h4>
+            <div class="text-yellow-400 mb-4 text-sm tracking-widest"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="text-slate-400 italic">"Sangat cocok untuk perjalanan bisnis. Menyewa Alphard di sini adalah keputusan terbaik. Premium!"</p>
+          </div>
+          <div class="mt-4 text-xs text-slate-500 text-right">Direview di Google</div>
+        </div>
+
+        <div class="review-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-xl mb-2 text-white">Citra Dewi</h4>
+            <div class="text-yellow-400 mb-4 text-sm tracking-widest"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="text-slate-400 italic">"Recommended untuk keluarga dan wisata luar kota. Mobilnya aman dan nyaman dipakai berhari-hari."</p>
+          </div>
+          <div class="mt-4 text-xs text-slate-500 text-right">Direview di Google</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="kontak" class="py-20 border-t border-white/10 relative overflow-hidden">
+  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-5 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+    
+    <div>
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-16 h-16 flex items-center justify-center overflow-hidden shrink-0">
+          <img src="logo.png" alt="Logo Graha Transport" class="w-full h-full object-contain">
+        </div>
+        <h3 class="text-3xl font-extrabold italic tracking-tight text-white">
+          GRAHA<span class="text-teal-400">TRANSPORT</span>
+        </h3>
+      </div>
+      
+      <p class="text-slate-400 leading-relaxed max-w-sm">
+        Solusi rental mobil premium terpercaya. Kami mengedepankan pelayanan profesional, keamanan, dan armada modern yang selalu dalam kondisi prima.
+      </p>
+      
+      <div class="flex gap-4 mt-6">
+        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-300 hover:bg-teal-400 hover:text-black transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-300 hover:bg-teal-400 hover:text-black transition"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-300 hover:bg-teal-400 hover:text-black transition"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="text-xl font-semibold mb-6 border-b border-white/10 pb-3 inline-block">Informasi Kontak</h4>
+      <div class="space-y-5 text-slate-400">
+        <div class="flex gap-4 items-start">
+          <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-location-dot text-teal-400"></i>
+          </div>
+          <span class="pt-2">Jl. Arjuna III No.17, Mapagan<br/>Kabupaten Semarang, Jawa Tengah</span>
+        </div>
+        <div class="flex gap-4 items-center">
+          <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-phone text-teal-400"></i>
+          </div>
+          <span>+62 813-2716-0516</span>
+        </div>
+        <div class="flex gap-4 items-center">
+          <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-envelope text-teal-400"></i>
+          </div>
+          <span>info@grahatransport.id</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="text-xl font-semibold mb-6 border-b border-white/10 pb-3 inline-block">Navigasi Cepat</h4>
+      <div class="flex flex-col gap-3 text-slate-400">
+        <a href="#beranda" class="hover:text-teal-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-teal-400/50"></i> Beranda</a>
+        <a href="#keunggulan" class="hover:text-teal-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-teal-400/50"></i> Keunggulan</a>
+        <a href="#armada" class="hover:text-teal-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-teal-400/50"></i> Armada</a>
+        <a href="#review" class="hover:text-teal-400 transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-teal-400/50"></i> Review Pelanggan</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="border-t border-white/10 mt-16 pt-8 text-center text-slate-500 text-sm relative z-10 max-w-7xl mx-auto px-5">
+    &copy; 2026 GRAHA TRANSPORT. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/6281327160516" rel="noopener noreferrer" aria-label="Chat WhatsApp"
+   class="wa-float fixed bottom-6 right-6 md:bottom-8 md:right-8 w-16 h-16 rounded-full bg-[#25D366] flex items-center justify-center text-3xl z-50 hover:scale-110 transition-transform">
+  <i class="fa-brands fa-whatsapp text-white"></i>
+</a>
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // Initialize AOS Animation Library
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 50,
+  });
+
+  // NAVBAR SCROLL EFFECT
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // MOBILE MENU LOGIC
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+
+  // Toggle open
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling behind menu
+  });
+
+  // Toggle close
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  });
+
+  // Auto close menu when a link is clicked
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // HERO IMAGE SLIDER LOGIC
+  const heroTrack = document.getElementById('heroTrack');
+  const dots = document.querySelectorAll('.dot');
+  let heroIndex = 0;
+  const slideCount = dots.length;
+
+  function updateHero() {
+    heroTrack.style.transform = `translateX(-${heroIndex * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[heroIndex].classList.add('active');
+  }
+
+  function nextSlide() {
+    heroIndex = (heroIndex + 1) % slideCount;
+    updateHero();
+  }
+
+  function prevSlide() {
+    heroIndex = (heroIndex - 1 + slideCount) % slideCount;
+    updateHero();
+  }
+
+  // Auto slide interval
+  let sliderInterval = setInterval(nextSlide, 4000);
+
+  // Pagination dot click
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      heroIndex = index;
+      updateHero();
+      // Reset timer on manual click
+      clearInterval(sliderInterval);
+      sliderInterval = setInterval(nextSlide, 4000);
+    });
+  });
+
+  // TOUCH SWIPE SUPPORT FOR SLIDER (Mobile friendly)
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  heroTrack.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+    clearInterval(sliderInterval); // Pause auto slide while touching
+  }, { passive: true });
+
+  heroTrack.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+    sliderInterval = setInterval(nextSlide, 4000); // Resume auto slide
+  }, { passive: true });
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    if (touchEndX < touchStartX - swipeThreshold) {
+      // Swiped left
+      nextSlide();
+    }
+    if (touchEndX > touchStartX + swipeThreshold) {
+      // Swiped right
+      prevSlide();
+    }
+  }
+
+</script>
+
+</body>
+</html>
